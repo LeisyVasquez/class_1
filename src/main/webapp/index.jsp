@@ -16,7 +16,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Bulma Version 0.9.0-->
         <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-        <link rel="stylesheet" type="text/css" href="../css/landing.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
     </head>
     <body>
         <section class="hero is-info is-fullheight">
@@ -24,9 +24,9 @@
                 <nav class="navbar">
                     <div class="container">
                         <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
+                            <!-- <a class="navbar-item" href="../">
                                 <img src="https://cdn-icons-png.flaticon.com/512/7698/7698646.png" width="40" alt="Logo">
-                            </a>
+                            </a> -->
                         </div>
                         <div id="navbarMenu" class="navbar-menu">
                             <div class="navbar-end">
@@ -39,7 +39,7 @@
                                     </a>
                                 </span>
                                 <span class="navbar-item">
-                                    <a class="button is-white is-outlined" href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html">
+                                    <a class="button is-white is-outlined" href="https://github.com/LeisyVasquez/class_1" target="_blank">
                                         <span class="icon">
                                             <i class="fa fa-github"></i>
                                         </span>
@@ -67,15 +67,15 @@
                                     if (p instanceof Employee) {
                                         emp = (Employee) p;
                         %>                
-                        <h2 class="subtitle mb-4">
-                            <%= emp.increaseSalary(30)%>
-                        </h2>
+                                    <h2 class="subtitle mb-4">
+                                        <%= emp.increaseSalary(30)%>
+                                    </h2>
                         <%         } else if (p instanceof Contractor) {
                             contr = (Contractor) p;
                         %>      
-                        <h2 class="subtitle mb-4">
-                            <%= contr.increaseSalary(10)%>
-                        </h2>
+                                    <h2 class="subtitle mb-4">
+                                        <%= contr.increaseSalary(10)%>
+                                    </h2>
                         <%
                                     }
                                 }
